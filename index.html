@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Meu Portfólio - [Seu Nome]</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     
@@ -16,14 +16,14 @@
         }
 
         :root {
-            /* Paleta Moderna */
-            --cor-fundo: #0a0a0a; /* Preto profundo */
-            --cor-primaria: #aaff00; /* Verde Limão / Cítrico (Destaque principal) */
-            --cor-texto-claro: #e0e0e0; /* Texto claro */
-            --cor-secundaria: #181818; /* Fundo de cards/seções (Cinza escuro) */
-            --cor-link: #8cfffb; /* Ciano claro para links */
+            /* Paleta Roxo & Branco */
+            --cor-fundo: #0d0d0d; /* Preto profundo */
+            --cor-primaria: #8a2be2; /* Roxo vibrante (Blue Violet) */
+            --cor-texto-claro: #ffffff; /* Texto principal branco */
+            --cor-secundaria: #1f1f1f; /* Fundo de cards/seções (Cinza escuro) */
+            --cor-link: #d8bfd8; /* Lilás claro para links */
             --fonte-principal: 'Open Sans', sans-serif;
-            --sombra-card: 0 5px 15px rgba(0, 0, 0, 0.5); /* Sombra mais suave e escura */
+            --sombra-card: 0 5px 15px rgba(0, 0, 0, 0.7); /* Sombra mais intensa */
         }
 
         body {
@@ -41,16 +41,7 @@
             margin-bottom: 20px;
         }
 
-        /* FOTO DE PERFIL (MANTIDA) */
-        .foto-perfil {
-            width: 160px; 
-            height: 160px;
-            border-radius: 50%; 
-            object-fit: cover; 
-            border: 5px solid var(--cor-primaria); /* Borda mais grossa */
-            box-shadow: 0 0 20px rgba(170, 255, 0, 0.5); /* Efeito de brilho */
-            margin-bottom: 20px;
-        }
+        /* FOTO DE PERFIL FOI REMOVIDA */
 
         header h1 {
             font-size: 3em;
@@ -61,7 +52,7 @@
 
         header p {
             font-size: 1.2em;
-            color: var(--cor-primaria); /* Destaque a área profissional */
+            color: var(--cor-primaria); /* Destaque a área profissional em roxo */
             font-weight: 400;
         }
 
@@ -84,31 +75,31 @@
         /* SEÇÃO PROJETOS */
         #projetos {
             display: grid;
-            gap: 30px; /* Mais espaço entre os cards */
+            gap: 30px; 
             grid-template-columns: 1fr; 
         }
 
         .projeto {
             background-color: var(--cor-secundaria);
-            padding: 0; /* Remove padding inicial para que a imagem comece na borda */
+            padding: 0; 
             border-radius: 12px;
             box-shadow: var(--sombra-card);
             transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-            overflow: hidden; /* Garante que a imagem respeite o border-radius */
-            border: 1px solid rgba(255, 255, 255, 0.05); /* Borda sutil */
+            overflow: hidden; 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
         }
 
         .projeto:hover {
-            transform: translateY(-8px); /* Efeito de levitação mais pronunciado */
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            transform: translateY(-8px); 
+            box-shadow: 0 10px 30px rgba(138, 43, 226, 0.4); /* Brilho roxo no hover */
         }
         
         /* FOTO DENTRO DO PROJETO */
         .projeto-img {
             width: 100%; 
-            height: 200px; /* Altura fixa para manter o layout uniforme */
-            object-fit: cover; /* Recorta a imagem para preencher o espaço sem distorcer */
-            border-bottom: 1px solid var(--cor-primaria); /* Linha de separação */
+            height: 200px; 
+            object-fit: cover; 
+            border-bottom: 3px solid var(--cor-primaria); /* Borda roxa de destaque */
         }
         
         .projeto-conteudo {
@@ -135,7 +126,7 @@
         }
 
         .projeto a:hover {
-            color: var(--cor-primaria); /* Mudar para a cor primária ao passar o mouse */
+            color: var(--cor-primaria); 
         }
 
         /* FOOTER (RODAPÉ) */
@@ -161,21 +152,20 @@
         /* RESPONSIVIDADE (MEDIA QUERIES) */
         @media (min-width: 600px) {
             #projetos {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Layout flexível */
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
             }
         }
     </style>
     </head>
 <body>
     <header>
-        <img src="perfil.jpg" alt="Foto de perfil de [Seu Nome]" class="foto-perfil">
-        
-        <h1>Rafaela de Freitas Saturnino</h1>
+        <h1>[Seu Nome]</h1>
+        <p>Desenvolvedor [Sua Área]</p>
     </header>
 
     <section id="sobre">
         <h2>Sobre Mim</h2>
-        <p>Meu nome é Rafaela, tenho 17 anos, estudo Informática no IFRJ - Campus Niterói.</p>
+        <p>Aqui você coloca sua bio e suas principais habilidades. Use esta seção para um texto mais longo e detalhado sobre sua experiência e paixão pela tecnologia.</p>
     </section>
 
     <section id="projetos">
@@ -184,27 +174,27 @@
         <div class="projeto">
             <img src="ecommerce.jpg" alt="Screenshot do Projeto E-commerce" class="projeto-img">
             <div class="projeto-conteudo">
-                <h3>Checkpoint 1</h3>
+                <h3>Projeto E-commerce</h3>
                 <p>Uma loja virtual responsiva completa, utilizando a stack MERN para alto desempenho.</p>
-                <a href="https://github.com/rafaelafreitass/lista-de-exercicio-react/tree/main/checkpoint%201">Ver.→</a>
+                <a href="[LINK DO REPOSITÓRIO 1]">Ver Código e Demo →</a>
             </div>
         </div>
         
         <div class="projeto">
             <img src="dashboard.png" alt="Screenshot do Dashboard de Dados" class="projeto-img">
             <div class="projeto-conteudo">
-                <h3>Checkpoint 2</h3>
+                <h3>Dashboard de Dados</h3>
                 <p>Painel interativo para métricas financeiras, construído com Python e framework de visualização.</p>
-                <a href="https://github.com/rafaelafreitass/lista-de-exercicio-react/tree/main/checkpoint%202/meu-projeto-react">Ver.→</a>
+                <a href="[LINK DO REPOSITÓRIO 2]">Ver Código e Demo →</a>
             </div>
         </div>
         
         <div class="projeto">
             <img src="blog.png" alt="Screenshot do Blog Pessoal" class="projeto-img">
             <div class="projeto-conteudo">
-                <h3>Checkpoint 3</h3>
+                <h3>Blog Pessoal</h3>
                 <p>CMS para gerenciamento de conteúdo e SEO otimizado, hospedado no Vercel.</p>
-                <a href="https://github.com/rafaelafreitass/lista-de-exercicio-react/tree/main/checkpoint%203/trabalho-victor">Ver.→</a>
+                <a href="[LINK DO REPOSITÓRIO 3]">Ver Código e Demo →</a>
             </div>
         </div>
         
@@ -212,7 +202,7 @@
 
     <footer>
         <a href="[LINKEDIN]">LinkedIn</a> | <a href="[EMAIL]">Email</a> | <a href="[SITE PESSOAL Opcional]">Website</a>
-        <p style="margin-top: 10px; color: #555;">Desenvolvido com 💚 e código.</p>
+        <p style="margin-top: 10px; color: #555;">Desenvolvido com 💜 e código.</p>
     </footer>
 
     <script></script> 
