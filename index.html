@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio - [Seu Nome]</title>
+
+    <style>
+        /* GERAL E RESET BÁSICO */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Definição de cores e fontes */
+            --cor-fundo: #1c1c1c;
+            --cor-primaria: #007acc;
+            --cor-texto-claro: #f0f0f0;
+            --cor-secundaria: #333333;
+            --cor-link: #00b3b3;
+            --fonte-principal: 'Arial', sans-serif;
+        }
+
+        body {
+            font-family: var(--fonte-principal);
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto-claro);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* HEADER (CABECALHO) */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 2px solid var(--cor-secundaria);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: var(--cor-primaria);
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: var(--cor-texto-claro);
+        }
+
+        /* SEÇÕES GERAIS */
+        section {
+            padding: 40px 0;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            color: var(--cor-primaria);
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            border-bottom: 1px solid var(--cor-secundaria);
+            padding-bottom: 10px;
+        }
+
+        /* SEÇÃO PROJETOS */
+        #projetos {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+        }
+
+        .projeto {
+            background-color: var(--cor-secundaria);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .projeto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .projeto h3 {
+            color: var(--cor-texto-claro);
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .projeto a {
+            color: var(--cor-link);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .projeto a:hover {
+            text-decoration: underline;
+        }
+
+        /* FOOTER (RODAPÉ) */
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--cor-secundaria);
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: var(--cor-link);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: var(--cor-primaria);
+        }
+
+        /* RESPONSIVIDADE (MEDIA QUERIES) */
+        @media (min-width: 600px) {
+            #projetos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1000px) {
+            #projetos {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>[Seu Nome]</h1>
+        <p>Desenvolvedor [Sua Área]</p>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Aqui você coloca sua bio e suas principais habilidades.</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+
+        <div class="projeto">
+            <h3>Projeto E-commerce</h3>
+            <p>Uma loja virtual responsiva. <a href="[LINK DO REPOSITÓRIO 1]">Ver no GitHub</a></p>
+        </div>
+
+        <div class="projeto">
+            <h3>Dashboard de Dados</h3>
+            <p>Painel interativo para métricas. <a href="[LINK DO REPOSITÓRIO 2]">Ver no GitHub</a></p>
+        </div>
+
+        <div class="projeto">
+            <h3>Blog Pessoal</h3>
+            <p>CMS para gerenciamento de conteúdo. <a href="[LINK DO REPOSITÓRIO 3]">Ver no GitHub</a></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <a href="[LINKEDIN]">LinkedIn</a> | <a href="[EMAIL]">Contato</a>
+    </footer>
+
+    <script></script>
+</body>
+
+</html>
