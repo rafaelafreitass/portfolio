@@ -7,40 +7,40 @@
     <title>Portfólio</title>
 
     <style>
+        /* MUDANÇAS PARA FUNDO ESCURO */
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1a1a1a; 
-    color: #f0f0f0; 
-}
-/* Adicione ou modifique esta classe: */
-.secao-sobre {
-    padding: 60px 20px; /* Adiciona algum espaço acima e abaixo */
-    text-align: center; /* Centraliza o texto (H1 e H3) */
-    max-width: 800px; /* Limita a largura para melhor leitura */
-    margin: 0 auto; /* Centraliza a seção inteira na tela */
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* FUNDO ESCURO */
+            color: #f0f0f0; /* TEXTO CLARO */
+        }
+        
+        .secao-sobre {
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            border-bottom: 1px solid #333; /* Ajustando a linha de separação */
+        }
 
-/* Adicione ou modifique esta classe: */
-.perfil-container {
-    /* Não precisa de muita estilização aqui se o pai já centraliza,
-       mas você pode adicionar margens para espaçamento interno. */
-    padding: 20px; 
-}
+        .perfil-container {
+            padding: 20px; 
+        }
 
-/* Estilos de fonte para destaque */
-.perfil-container h1 {
-    font-size: 2.5em;
-    color: #091c47; /* Cor de destaque */
-    margin-bottom: 10px;
-}
+        /* Estilos de fonte para destaque (cor do seu nome) */
+        .perfil-container h1 {
+            font-size: 2.5em;
+            color: #9b59b6; /* Roxo Vibrante (Cor de destaque) */
+            margin-bottom: 10px;
+        }
 
-.perfil-container h3 {
-    font-size: 1.2em;
-    color: #666;
-    font-weight: normal; /* Geralmente bios não são em negrito */
-}
+        .perfil-container h3 {
+            font-size: 1.2em;
+            color: #cccccc; /* Cor clara para a bio */
+            font-weight: normal; 
+        }
+        
         .secao-projetos {
             padding: 40px 20px;
             text-align: center;
@@ -49,7 +49,7 @@
         h2 {
             margin-bottom: 30px;
             font-size: 2em;
-            color: #2c3e50;
+            color: #9b59b6; /* Cor de destaque nos títulos H2 */
         }
 
         .container-projetos {
@@ -61,9 +61,9 @@
         }
 
         .card-projeto {
-            background-color: #ffffff;
+            background-color: #2c2c2c; /* Fundo do card escuro */
             border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Sombra mais visível no fundo escuro */
             padding: 20px;
             text-align: left;
             transition: transform 0.3s ease;
@@ -71,6 +71,7 @@
 
         .card-projeto:hover {
             transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(155, 89, 182, 0.3); /* Sombra com brilho roxo no hover */
         }
 
         .card-projeto img {
@@ -89,16 +90,23 @@
             text-decoration: none;
             font-weight: bold;
             text-align: center;
+            transition: background-color 0.3s;
         }
 
         .link-demo {
-            background-color: #3498db;
+            background-color: #9b59b6; /* Cor de destaque (Roxo) */
             color: white;
+        }
+        .link-demo:hover {
+             background-color: #8e44ad;
         }
 
         .link-codigo {
-            background-color: #333;
+            background-color: #4a4a4a; /* Cinza escuro */
             color: white;
+        }
+        .link-codigo:hover {
+            background-color: #3a3a3a;
         }
     </style>
 </head>
@@ -109,7 +117,7 @@
         <div class="perfil-container">
 
             <h1>Rafaela de Freitas Saturnino</h1>
-            <h3>Meu nome é Rafaela, tenho 17 anos, curso o 6° período de Informática e este é o meu portfólio.</h3>
+            <h3>Meu nome é Rafaela, tenho 17 anos, estudo no IFRJ - Campus Niterói e este é o meu portfólio.</h3>
         </div>
     </section>
     <section id="projetos" class="secao-projetos">
@@ -136,6 +144,7 @@
             <article class="card-projeto">
                 <h3>Checkpoint 2</h3>
                 <img src="check2.jpg"
+                    alt="Imagem do Projeto 2"> 
 
                 <p class="descricao">
                     Sistema de Personagem e Aventura.
@@ -143,7 +152,7 @@
 
 
                 <div class="links-projeto">
-                    <a href="https://github.com/rafaelafreitass/lista-de-exercicio-react/tree/main/checkpoint%202/meu-projeto-react"
+                    <a href="https://github.com/rafaelafreitass/lista-de-exercicio-react/tree/main/checkpoint%202/meu-projeto-react" target="_blank"
                         class="link-demo">Ver →</a>
 
                 </div>
@@ -151,7 +160,7 @@
             <article class="card-projeto">
                 <h3>Checkpoint 3</h3>
                 <img src="check3.png"
-                    alt="Imagem do Projeto 1">
+                    alt="Imagem do Projeto 3"> 
 
                 <p class="descricao">
                     Sistema de Spotify
